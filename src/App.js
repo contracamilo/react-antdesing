@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import './App.css';
 
 import { Layout, Menu, Breadcrumb } from 'antd';
+import Form from './pages/Form';
 const { Header, Content, Footer } = Layout;
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
         <Breadcrumb.Item>List</Breadcrumb.Item>
         <Breadcrumb.Item>App</Breadcrumb.Item>
       </Breadcrumb>
-      <div className="site-layout-content">Content</div>
+      <div className="site-layout-content">
+        <Form />
+      </div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
   </Layout>
