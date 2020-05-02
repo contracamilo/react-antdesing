@@ -41,6 +41,34 @@
   float: left;
 }
 
+.ant-form {
+  text-align: left;
+}
+
+.ant-form button{
+  padding: 0.4rem 2rem;
+  background-color:#1DA57A;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+}
+
+.ant-form button:hover{
+  background-color:rgb(21, 133, 97);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ul{
+  padding: 2rem 0;
+  display: flex;
+}
+li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

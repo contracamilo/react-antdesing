@@ -1,3 +1,4 @@
+const path = require('path')
 const { override, fixBabelImports, addLessLoader } = require('customize-cra');
 
 
@@ -7,6 +8,12 @@ const { override, fixBabelImports, addLessLoader } = require('customize-cra');
      libraryDirectory: 'es',
      style: true,
    }),
+   
+   fixBabelImports('formik-antd', {
+    libraryName: 'formik-antd',
+    libraryDirectory: 'es',
+    style: true,
+  }),
 
    addLessLoader({
       javascriptEnabled: true,

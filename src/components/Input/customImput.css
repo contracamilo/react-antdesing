@@ -1,0 +1,8 @@
+.custom-input {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+.custom-input label {
+     width: 100% !important;
+     text-align: left;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button } from 'antd';
 import './App.css';
 
 import { Layout, Menu, Breadcrumb } from 'antd';
-import Form from './pages/Form';
+import { FormFormik } from './pages/FormFormik';
+import FormSizeDemo from './pages/Form';
+
 const { Header, Content, Footer } = Layout;
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
         <Breadcrumb.Item>App</Breadcrumb.Item>
       </Breadcrumb>
       <div className="site-layout-content">
-        <Form />
+        <FormFormik />
+        {/*<FormSizeDemo />*/}
       </div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
