@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import {Button} from "antd";
-import {Form} from "formik-antd";
-import {Formik} from "formik";
+import {Button, message} from "antd";
+import {Form, Input} from "formik-antd";
+import {Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
 import {ErrorValidator} from "../components/Error/Error";
 
@@ -14,7 +14,7 @@ export const FormFormik = () => {
 	const [allValues, setAllValues] = useState([]);
 
 	const SignupSchema = Yup.object().shape({
-		firstName: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("Required"),
+		firstName: Yup.string().min(2, "Too Short!").max(10, "Too Long!").required("Requireddd"),
 		lastName: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("Required"),
 		email: Yup.string().email("Invalid email").required("Required"),
 	});
@@ -73,8 +73,15 @@ export const FormFormik = () => {
 			>
 				{({errors, touched}) => (
 					<Form>
-						<InputItem {...nameProps()} />
-						<ErrorValidator err={errors.firstName} touch={touched.firstName} />
+						<div className="custom-input">
+							<label>
+								{nameProps().label}
+								<Input {...nameProps()} />
+							</label>
+							<ErrorValidator err={errors.firstName} touch={touched.firstName} />
+						</div>
+
+
 
 						<InputItem {...lastNameProps()} />
 						<ErrorValidator err={errors.lastName} touch={touched.lastName} />
