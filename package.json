@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd-dayjs-webpack-plugin": "^1.0.0",
     "babel-plugin-import": "^1.13.0",
+    "bulma": "^0.8.2",
     "customize-cra": "^0.9.1",
     "formik-antd": "^2.0.1",
     "less": "^3.11.1",

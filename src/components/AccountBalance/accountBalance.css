@@ -1,0 +1,33 @@
+.balance__amount, .savings__amount{
+    position: relative;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1em;
+    vertical-align: middle;
+    padding: 4%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.balance__amount{
+    border: 10px solid  hsl(107, 100%, 41%);
+} 
+.savings__amount{
+    border: 10px solid  hsl(48, 100%, 67%);
+}
+
+.balance__amount:before, .savings__amount:before{
+    content: '';
+    float: left;
+    width: auto;
+    padding-bottom: 100%;
+}
+
+.ant-btn-primary{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+}

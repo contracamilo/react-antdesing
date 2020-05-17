@@ -3,7 +3,8 @@ import './App.css';
 
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { FormFormik } from './pages/FormFormik';
-import FormSizeDemo from './pages/Form';
+// import FormSizeDemo from './pages/Form';
+import AccountBalance from './components/AccountBalance';
 
 const { Header, Content, Footer } = Layout;
 
@@ -29,8 +30,10 @@ function App() {
         <FormFormik />
         {/*<FormSizeDemo />*/}
       </div>
+      <h2>Hook practice</h2>
+      <AccountBalance />
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center' }}>Practice</Footer>
   </Layout>
     </div>
   );
